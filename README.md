@@ -3,6 +3,14 @@
 
 ## This repo will contain all related files and notes to CPE 551, a graduate course at Stevens Institute of Technology
 
+## COURSE DESCRIPTION
+This course presents tools, techniques, algorithms, and programming techniques using the Python
+programming language for data intensive applications and decision making. The course formally
+introduces techniques to: (i) gather, (ii) store, and (iii) process large volumes of data to make
+informed decisions. Such techniques find applicability in many engineering application areas,
+including communications systems, embedded systems, smart grids, robotics, Internet, and enterprise
+networks, or any network where information flows and alters decision making.
+
 ---
 
 ## My name is Joris, and I am a 3rd year computer engineering undergrad at Stevens
