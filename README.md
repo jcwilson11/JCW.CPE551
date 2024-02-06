@@ -1,4 +1,5 @@
 # **Joris Wilson: CPE 551 - Engineering Programming: Python**
+# ***This course is still ongoing***
 
 ## This repo will contain all related files and notes to CPE 551, a graduate course at Stevens Institute of Technology
 
