@@ -8,33 +8,33 @@ class Card:  # used to create a card object to represent a single card
     suit_list = ["Clubs", "Diamonds", "Hearts", "Spades"]
     rank_list = ["None", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]  # Ace is the highest
 
-    def __init__(self, suit=0, rank=2):
+    def __init__(self, suit=0, rank=2): 
         self.suit = suit
         self.rank = rank
 
-    def __str__(self):
+    def __str__(self): # Print the card
         return f"{self.rank_list[self.rank]} of {self.suit_list[self.suit]}"
 
-    def __eq__(self, other):
+    def __eq__(self, other): # Check if two cards are equal
         return self.rank == other.rank
 
-    def __gt__(self, other):
+    def __gt__(self, other): 
         return self.rank > other.rank  # Comparison based on the index in rank_list
 
 class Deck:  # used to create a deck of cards
-    def __init__(self):
+    def __init__(self): # Initialize the deck with 52 cards
         self.cards = []
         for suit in range(4):
             for rank in range(1, 14):  # rank 1 is '2' and 13 is 'Ace'
                 self.cards.append(Card(suit, rank))
         random.shuffle(self.cards)
 
-    def rm_card(self):
+    def rm_card(self): # Remove a card from the deck
         if len(self.cards) == 0:
             return None
         return self.cards.pop()
 
-class Player:
+class Player: # used to create a player object
     def __init__(self, name):
         self.name = name
         self.hand = []
